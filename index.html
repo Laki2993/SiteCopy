@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ИПК "РБК" - Финансирование малоэтажного строительства</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <section class="callBackContainer">
+        <dialog class="popUp">
+            <form class="formCallBack" action="#">
+                <h2 class="formCallBackTitle">Заказать обратный <br> звонок</h2>
+                <article class="popUpError"></article>
+                <input class="formCallBackInp" type="tel" placeholder="+7 (000)000-0000">
+                <button class="formCallBackBtn" type="submit">ПОЗВОНИТЕ МНЕ</button>
+                <p class="formCallBackDesc">
+                    Мы перезвоним вам в самое <br> ближайшее время! <br>+7 812 313 21 38
+                </p>
+            </form>
+        </dialog>
+        <section class="callBackContainer" id="callBackContainer">
             <article class="callBackText">
-                <h1>ИПК "РБК"  Финансирование малоэтажного строительства</h1>
-                <p class="callBackDescription">ЦФО + 7 993 302-07-26 СЗФО +7 812 313-21-38</p>
+                <h1>ИПК "РБК" <br>  Финансирование малоэтажного строительства</h1>
+                <p class="callBackDescription">ЦФО + 7 993 302-07-26 &ensp;  СЗФО + 7 812 313-21-38</p>
             </article>
             <form class="callBackForm" action="#">
                 <p class="formTitle">Заполните форму, чтобы начать сотрудничество и увеличить продажи!</p>
@@ -36,8 +48,10 @@
                 </section>
                 <input type="text" class="callBackFormName" id="inputType" placeholder="Имя пользователя, ID или ссылка">
                 <button class="callBackFormButton">Отправить заявку</button>
-
             </form>
+    <article class="fooBtn">
+        <button class="callForm" id="callForm"></button>
+    </article>
         </section>
         <section class="decriptionContainer">
             <article class="contentContainer">
@@ -67,7 +81,7 @@
                     </article>
                     <article class="decriptionContainerChild">
                         <p class="decriptionContainerText">
-                            03. Первоначальный взнос — от<br> 
+                            03. Первоначальный взнос — от
                             0% (по отдельным программам)
                         </p>
                     </article>
@@ -146,7 +160,7 @@
                         Меньше отказов из-за сложных <br> 
                         банковских требований. Клиенты <br> 
                         получают одобрение быстрее, а <br> 
-                        сделки не «зависают».
+                        сделки не «зависают»
                     </p>
                 </article>
                 <article class="whyweContainerCard">
@@ -158,7 +172,7 @@
                         Сопровождаем от заявки до выхода <br> 
                         объекта и внесения окончательных <br> 
                         платежей. Финансирование одного <br> 
-                        проекта — от 5 до 50 млн ₽.
+                        проекта — от 5 до 50 млн ₽
                     </p>
                 </article>
             </section>
@@ -169,18 +183,224 @@
                 к партнёрству
             </h2>
             <section class="partnershipContainerList">
-                <h3>Финансирование малоэтажного строительства</h3>
+                <h3 class="partnershipContainerListText">Финансирование малоэтажного строительства</h3>
                 <section class="partnershipList">
                     <article class="partnershipListBlock">
-
+                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
+                        <p class="partnershipListBlockText">Регистрация в личном <br> кабинете застройщика</p>
+                    </article>
+                    <article class="partnershipListBlock">
+                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
+                        <p class="partnershipListBlockText">Подача заявки на <br> аккредитацию объектов</p>
+                    </article>
+                    <article class="partnershipListBlock">
+                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
+                        <p class="partnershipListBlockText">Андеррайтинг — <br> проверка заёмщика (без справок о доходах)</p>
+                    </article>
+                    <article class="partnershipListBlock">
+                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
+                        <p class="partnershipListBlockText">Одобрение и <br> заключение договора</p>
+                    </article>
+                    <article class="partnershipListBlock">
+                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
+                        <p class="partnershipListBlockText">Выплата — деньги <br> поступают подрядчику / <br> застройщику</p>
                     </article>
                 </section>
             </section>
         </section>
+        <section class="PartnerContainer"> 
+            <article class="PartnerContainerBlock">
+                <h2 class="PartnerContainerTitle">Кто может стать <br> партнёром</h2>
+                <p class="PartnerContainerDesc">
+                    ▶ Опыт малоэтажного строительства от 2 лет <br>
+                    ▶ Завершено не менее 5 частных домов за последний год <br>
+                    ▶ Предоставление полной проектной и сметной документации <br>
+                    ▶ Оформленные земельные отношения <br>
+                    ▶ Отсутствие недоимок по налогам и существенных исков <br>
+                    ▶ Финансовая устойчивость <br>
+                    ▶ Отсутствие исков об оспаривании договоров подряда <br>
+                </p>
+            </article>
+        </section>
+        <section class="ControlContainer">
+            <h2 class="ControlContainerTitle">Управляйте <br> финансированием онлайн</h2>
+            <section class="ControlContainerList">
+                    <article class="ControlContainerCard">
+                        <img class="ControlContainerCardImg" src="/assets/iconDisplay.png" alt="">
+                        <p class="ControlContainerCardTitle">Личный кабинет застройщика</p>
+                        <p class="ControlContainerCardDesc">
+                            Подача заявок, отслеживание статусов, <br> 
+                            защищённый обмен документами
+                        </p>
+                    </article>
+                    <article class="ControlContainerCard">
+                        <img class="ControlContainerCardImg" src="/assets/iconCalculat.png" alt="">
+                        <p class="ControlContainerCardTitle">Кредитный калькулятор</p>
+                        <p class="ControlContainerCardDesc">
+                            Клиент может рассчитать условия до подачи <br> заявки
+                        </p>
+                    </article>
+                    <article class="ControlContainerCard">
+                        <img class="ControlContainerCardImg" src="/assets/iconBook.png" alt="">
+                        <p class="ControlContainerCardTitle">Открытый продукт</p>
+                        <p class="ControlContainerCardDesc">
+                            Прозрачные стандарты, которые понятны и <br> клиенту, и партнёру
+                        </p>
+                    </article>
+            </section>
+        </section> 
+        <section class="BuisnesContainer">
+            <img class="BuisnesContainerImg" src="/assets/BgPoster.jpg" alt="">
+            <section class="BuisnesContainerList">
+                <h2 class="BuisnesContainerListTite">Мы не просто даём деньги, <br> мы развиваем ваш бизнес!</h2>
+                <section class="BuisnesContainerCards">
 
+                    <article class="BuisnesContainerCard">
+                        <p class="BuisnesContainerCardNum">1</p>
+                        <p class="BuisnesContainerCardTitle">
+                            Единый чат с  персональным  менеджером
+                        </p>
+                        <p class="BuisnesContainerCardDesc">
+                            Быстрое решение текущих <br> 
+                            вопросов для ваших <br> 
+                            менеджеров по продажам. <br> 
+                            Помощь на всех этапах сделки
+                        </p>
+                    </article>
+                    <article class="BuisnesContainerCard">
+                        <p class="BuisnesContainerCardNum">2</p>
+                        <p class="BuisnesContainerCardTitle">Стандарты продаж</p>
+                        <p class="BuisnesContainerCardDesc">
+                            Готовые скрипты, чек-листы и <br> 
+                            инструменты для ваших <br> 
+                            менеджеров. Выход на <br> 
+                            качественно новый уровень <br> работы
+                        </p>
+                    </article>
+                    <article class="BuisnesContainerCard">
+                        <p class="BuisnesContainerCardNum">3</p>
+                        <p class="BuisnesContainerCardTitle">Куратор</p>
+                        <p class="BuisnesContainerCardDesc">
+                            Персональный менеджер <br> 
+                            помогает внедрить стандарты <br> 
+                            кредитования и сопровождает <br> партнёра
+                        </p>
+                    </article>
+                    <article class="BuisnesContainerCard">
+                        <p class="BuisnesContainerCardNum">4</p>
+                        <p class="BuisnesContainerCardTitle">Совместные акции</p>
+                        <p class="BuisnesContainerCardDesc">
+                            Участие в промо-кампаниях, <br> 
+                            продвижение ваших объектов <br> среди клиентов кооператива.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="conditionsContainer">
+            <h2 class="conditionsContainerTitle">Условия для <br> конечных <br> заёмщиков</h2>
+            <p class="conditionsContainerDesc">
+                ▶ Сумма финансирования — от 5 до 50 млн ₽<br>
+                ▶ Ставка — от минимальной (зависит от суммы, срока, первоначального взноса)<br>
+                ▶ Первоначальный взнос — от 30%, по ряду программ  возможно 0% <br>
+                ▶ Срок — до 15 лет<br>
+                ▶ Обеспечение — строящееся или имеющееся жильё (залог)<br>
+                ▶ Погашение — аннуитетные платежи, возможность  досрочного погашения без штрафов<br>
+            </p>
+        </section>
+        <section class="questionsContainer">
+            <h2 class="questionsContainerTitle">Часто задаваемые вопросы (FAQ)</h2>
+                <section class="questionsContainerBlock" id="question1">
+                    <article class="questionsContainerRow">
+                        <h2 class="questionsContainerRowTitle">1. Какие цели финансирования вы не одобряете?</h2>
+                        <button class="cross"></button>
+                    </article>
+                    <p class="questionsContainerRowDesc">
+                        Мы финансируем только строительство самого жилого дома по утверждённой <br>
+                        смете. В финансирование не входят:<br>
+                        Наружные сети, газификация, подключение к магистралям и сетям <br>
+                        Проектирование, разрешительная документация, юридические услуги <br>
+                        Мебель, предметы интерьера, ландшафтные работы и материалы <br>
+                        Сторонние строения, не входящие в объект договора <br>
+                        Оформление земельного участка <br>
+                        Все эти расходы клиент берёт на себя отдельно <br>
+                    </p>
+                </section>
+                <section class="questionsContainerBlock" id="question2">
+                    <article class="questionsContainerRow">
+                        <h2 class="questionsContainerRowTitle">2. Какие документы нужны для подачи заявки на <br> финансирование объекта?</h2>
+                        <button class="cross" ></button>
+                    </article>
+                    <p class="questionsContainerRowDesc">
+                        Для рассмотрения заявки необходимо предоставить: <br>
+                        Данные заёмщика: ФИО, паспортные данные (скан паспорта) <br>
+                        Данные созаёмщика (супруг/супруга): ФИО, паспортные данные (скан паспорта) <br>
+                        Данные участка: точный адрес, кадастровый номер (скан выписки из ЕГРН) <br>
+                        Данные строителя: наименование ООО или ФИО ИП, адрес, реквизиты <br>
+                        Данные постройки: проект (эскизный или архитектурный) <br>
+                        Данные стоимости строительства: смета с разделением на стоимость <br> 
+                        работ и стоимость материалов <br>
+                        Данные сроков строительства: график работ (каждый этап с указанием <br> 
+                        количества дней или месяцев) <br>
+                        Справки о доходах, кредитная история и первоначальный взнос не требуются
+                    </p>
+                </section>
+                <section class="questionsContainerBlock">
+                    <article class="questionsContainerRow">
+                        <h2 class="questionsContainerRowTitle">3. Что является залогом?</h2>
+                        <button class="cross"></button>
+                    </article>
+                    <p class="questionsContainerRowDesc">
+                        Залогом выступают земельный участок (в собственности, под ИЖС) и <br> 
+                        строящийся на нём дом. Дом ещё не построен, но его будущая стоимость уже <br> 
+                        служит обеспечением
+                    </p>
+                </section>
+                <section class="questionsContainerBlock">
+                    <article class="questionsContainerRow">
+                        <h2 class="questionsContainerRowTitle">3. Что является залогом?</h2>
+                        <button class="cross"></button>
+                    </article>
+                    <p class="questionsContainerRowDesc">
+                        Залогом выступают земельный участок (в собственности, под ИЖС) и <br> 
+                        строящийся на нём дом. Дом ещё не построен, но его будущая стоимость уже <br> 
+                        служит обеспечением
+                    </p>
+                </section>
+                <section class="questionsContainerBlock">
+                    <article class="questionsContainerRow">
+                        <h2 class="questionsContainerRowTitle">4. Как быстро строительная компания получает деньги?</h2>
+                        <button class="cross"></button>
+                    </article>
+                    <p class="questionsContainerRowDesc">
+                        Деньги выделяются поэтапно, но очень оперативно — сразу после подписания <br> договора и согласно графику работ. Эксроу-счета не используются
+                    </p>
+                </section>
+        </section>
     </main>
     <footer>
-
+        <section class="fooContainer">
+            <img class="fooImg" src="/assets/Map.jpg" alt="">
+            <h2 class="fooTitle">Начнём <br> сотрудничество?</h2>
+            <p class="fooDesc">
+                Обсудим детали аккредитации ваших объектов, подключим личный <br> 
+                кабинет и запустим продажи с нашим финансированием
+            </p>
+            <p class="fooContact" id="Num1">ЦФО +7 993 302 07 26</p>
+            <p class="fooContact" id="Num2">СЗФО +7 812 313 21 38</p>
+            <nav class="fooNav">
+                <h2 class="fooNavTitle">ИПК "РБК"</h2>
+                <a  class="fooNavLink" href="#">Кредитный калькулятор</a>
+                <a  class="fooNavLink" href="#">sales@ipkrbk.ru</a>
+                <a  class="fooNavLink" href="#">ВКонтакте</a>
+                <a  class="fooNavLink" href="#">MAX</a>
+                <a  class="fooNavLink" href="#">Telegram</a>
+            </nav>
+            <article class="fooText">
+                <p class="fooRights">Все права защищены ©</p>
+                <a class="fooLinkUp" href="#">Вернуться вверх</a>
+            </article>
+        </section>
     </footer>
     <script src="script.js"></script>
 </body>
