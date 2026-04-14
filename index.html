@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,400 +8,376 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <dialog class="popUp">
-            <form class="formCallBack" action="#">
-                <h2 class="formCallBackTitle">Заказать обратный <br> звонок</h2>
-                <article class="popUpError"></article>
-                <input class="formCallBackInp" type="tel" placeholder="+7 (000)000-0000">
-                <button class="formCallBackBtn" type="submit">ПОЗВОНИТЕ МНЕ</button>
-                <p class="formCallBackDesc">
+    <main class="main">
+        <dialog class="modal">
+            <form class="modal__form" action="#">
+                <h2 class="modal__title">Заказать обратный <br> звонок</h2>
+                <div class="modal__error"></div>
+                <input class="modal__input" type="tel" placeholder="+7 (000)000-0000">
+                <button class="modal__submit" type="submit">ПОЗВОНИТЕ МНЕ</button>
+                <p class="modal__description">
                     Мы перезвоним вам в самое <br> ближайшее время! <br>+7 812 313 21 38
                 </p>
             </form>
         </dialog>
-        <section class="callBackContainer" id="callBackContainer">
-            <article class="callBackText">
-                <h1>ИПК "РБК" <br>  Финансирование малоэтажного строительства</h1>
-                <p class="callBackDescription">ЦФО + 7 993 302-07-26 &ensp;  СЗФО + 7 812 313-21-38</p>
-            </article>
-            <form class="callBackForm" action="#">
-                <p class="formTitle">Заполните форму, чтобы начать сотрудничество и увеличить продажи!</p>
-                <input type="text" class="callBackFormName" placeholder="Как к вам удобно обратиться?">
-                <section class="callBackChoice">
-                    <button class="callBackFormBtn" id="BtnPhone">
-                        <img class="callBackImg" src="/assets/IconPhone.svg" alt="Phone">
-                        <p class="callBackBtnText">Телефон</p>
+
+        <button class="callback-trigger" id="callbackTrigger"></button>
+
+        <section class="hero" id="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">ИПК "РБК" <br> Финансирование малоэтажного строительства</h1>
+                <p class="hero__contacts">ЦФО +7 993 302-07-26 &ensp; СЗФО +7 812 313-21-38</p>
+            </div>
+            
+            <form class="callback-form" action="#">
+                <p class="callback-form__title">Заполните форму, чтобы начать сотрудничество и увеличить продажи!</p>
+                <input type="text" class="callback-form__name" placeholder="Как к вам удобно обратиться?">
+                
+                <div class="callback-form__social">
+                    <button class="social-btn" id="socialPhone">
+                        <img class="social-btn__icon" src="/assets/IconPhone.svg" alt="Phone">
+                        <span class="social-btn__text">Телефон</span>
                     </button>
-                    <button class="callBackFormBtn" id="BtnTelegram">
-                        <img class="callBackImg" src="/assets/IconTelegram.svg" alt="Telegram">
-                        <p class="callBackBtnText">Telegram</p>
+                    <button class="social-btn" id="socialTelegram">
+                        <img class="social-btn__icon" src="/assets/IconTelegram.svg" alt="Telegram">
+                        <span class="social-btn__text">Telegram</span>
                     </button>
-                    <button class="callBackFormBtn" id="BtnVk">
-                        <img class="callBackImg" src="/assets/IconVk.svg" alt="Vk">
-                        <p class="callBackBtnText">VK</p>
+                    <button class="social-btn" id="socialVk">
+                        <img class="social-btn__icon" src="/assets/IconVk.svg" alt="Vk">
+                        <span class="social-btn__text">VK</span>
                     </button>
-                    <button class="callBackFormBtn" id="BtnMax">
-                        <img class="callBackImg" src="/assets/IconMax.svg" alt="Max">
-                        <p class="callBackBtnText">Max</p>
+                    <button class="social-btn" id="socialMax">
+                        <img class="social-btn__icon" src="/assets/IconMax.svg" alt="Max">
+                        <span class="social-btn__text">Max</span>
                     </button>
-                </section>
-                <input type="text" class="callBackFormName" id="inputType" placeholder="Имя пользователя, ID или ссылка">
-                <button class="callBackFormButton">Отправить заявку</button>
+                </div>
+                
+                <input type="text" class="callback-form__social-input" id="socialInput" placeholder="Имя пользователя, ID или ссылка">
+                <button class="callback-form__submit">Отправить заявку</button>
             </form>
-    <article class="fooBtn">
-        <button class="callForm" id="callForm"></button>
-    </article>
         </section>
-        <section class="decriptionContainer">
-            <article class="contentContainer">
-                <h2 class="descriptionContainerTitle">
+
+        <section class="features">
+            <div class="features__content">
+                <h2 class="features__title">
                     ИПК «РБК» <br>
-                    инвестиционный потребительский 
-                    кооператив,<br>предоставляющий 
-                    финансирование на <br>  строительство    
-                    индивидуальных жилых домов
+                    инвестиционный потребительский кооператив,<br>предоставляющий финансирование на <br> строительство индивидуальных жилых домов
                 </h2>
-                <p class="descriptionContainerDescription">
-                    Работаем напрямую с застройщиками и  <br>
-                    девелоперами, предлагая гибкие инструменты для <br> 
-                    конечных покупателей: рассрочка, кредит, лизинг <br>
+                <p class="features__description">
+                    Работаем напрямую с застройщиками и <br>
+                    девелоперами, предлагая гибкие инструменты для <br>
+                    конечных покупателей: рассрочка, кредит, лизинг
                 </p>
-                <section class="decriptionContainerList">
-                    <article class="decriptionContainerChild">
-                        <p class="decriptionContainerText">
-                            01. Без подтверждения дохода<br>  
-                            заёмщика
-                        </p>
-                    </article>
-                    <article class="decriptionContainerChild">
-                        <p class="decriptionContainerText">
-                            02. Минимальные процентные <br>ставки
-                        </p>
-                    </article>
-                    <article class="decriptionContainerChild">
-                        <p class="decriptionContainerText">
-                            03. Первоначальный взнос — от
-                            0% (по отдельным программам)
-                        </p>
-                    </article>
-                    <article class="decriptionContainerChild">
-                        <p class="decriptionContainerText">
-                           04. Персональный <br> менеджер
-                        </p>
-                    </article>
-            </article>
+                
+                <div class="features__list">
+                    <div class="feature-card">
+                        <p class="feature-card__text">01. Без подтверждения дохода<br> заёмщика</p>
+                    </div>
+                    <div class="feature-card">
+                        <p class="feature-card__text">02. Минимальные процентные <br>ставки</p>
+                    </div>
+                    <div class="feature-card">
+                        <p class="feature-card__text">03. Первоначальный взнос — от 0% (по отдельным программам)</p>
+                    </div>
+                    <div class="feature-card">
+                        <p class="feature-card__text">04. Персональный <br> менеджер</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="proposalContainer">
-            <h3 class="proposalContainerTitle">Что мы предлагаем вашим клиентам</h3>
-            <h2 class="proposalContainerDesc">
-                Мы предоставляем целевой кредит на <br> 
-                строительство частного дома
-            </h2>
-            <section class="proposalText">
-                <article class="proposalContainerArea">
-                    <h2 class="proposalContainerTitleArea">5 млн</h2>
-                    <p class="proposalContainerDescArea">Минимальная сумма <br> финансирования</p>
-                </article>                
-                <article class="proposalContainerArea">
-                    <h2 class="proposalContainerTitleArea">50 млн</h2>
-                    <p class="proposalContainerDescArea">Максимальная сумма<br> финансирования</p>
-                </article>
-                <article class="proposalContainerArea">
-                    <h2 class="proposalContainerTitleArea">24 ч</h2>
-                    <p class="proposalContainerDescArea">Срок рассмотрения</p>
-                </article>
-            </section>
+
+        <section class="stats">
+            <h3 class="stats__subtitle">Что мы предлагаем вашим клиентам</h3>
+            <h2 class="stats__title">Мы предоставляем целевой кредит на <br> строительство частного дома</h2>
+            
+            <div class="stats__grid">
+                <div class="stat-card">
+                    <h2 class="stat-card__value">5 млн</h2>
+                    <p class="stat-card__label">Минимальная сумма <br> финансирования</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="stat-card__value">50 млн</h2>
+                    <p class="stat-card__label">Максимальная сумма<br> финансирования</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="stat-card__value">24 ч</h2>
+                    <p class="stat-card__label">Срок рассмотрения</p>
+                </div>
+            </div>
         </section>
-        <section class="whyweContainer">
-            <h2 class="whyweContainerTitle">
-                Почему застройщики выбирают нас
-            </h2>
-            <section class="whyweContainerCards">
-                <article class="whyweContainerCard">
-                    <article class="whyweContainerCardText">
-                        <img class="whyweContainerCardImg" src="/assets/iconSale.png" alt="">
-                        <p class="whyweContainerCardTitle">Увеличение продаж</p>
-                    </article>
-                    <p class="whyweContainerCardDesc">
-                        Предоставляете клиентам готовое <br> 
-                        финансирование — закрываете<br> 
-                        больше сделок
-                    </p>
-                </article>
-                <article class="whyweContainerCard">
-                    <article class="whyweContainerCardText">
-                        <img class="whyweContainerCardImg" src="/assets/iconCa.png" alt="">
-                        <p class="whyweContainerCardTitle">Привлечение новой<br> аудитории</p>
-                    </article>
-                    <p class="whyweContainerCardDesc">
-                        Покупатели, которые ранее не могли <br> 
-                        позволить дом из-за сложных <br> 
-                        банковских требований
-                    </p>
-                </article>
-                <article class="whyweContainerCard">
-                    <article class="whyweContainerCardText">
-                        <img class="whyweContainerCardImg" src="/assets/iconList.png" alt="">
-                        <p class="whyweContainerCardTitle">Минимум бюрократии</p>
-                    </article>
-                    <p class="whyweContainerCardDesc">
-                        Цифровой документооборот, личный <br> 
-                        кабинет застройщика, прозрачный <br> 
-                        андеррайтинг
-                    </p>
-                </article>
-                <article class="whyweContainerCard">
-                    <article class="whyweContainerCardText">
-                        <img class="whyweContainerCardImg" src="/assets/iconUp.png" alt="">
-                        <p class="whyweContainerCardTitle">Рост конверсии</p>
-                    </article>
-                    <p class="whyweContainerCardDesc">
-                        Меньше отказов из-за сложных <br> 
-                        банковских требований. Клиенты <br> 
-                        получают одобрение быстрее, а <br> 
-                        сделки не «зависают»
-                    </p>
-                </article>
-                <article class="whyweContainerCard">
-                    <article class="whyweContainerCardText">
-                        <img class="whyweContainerCardImg" src="/assets/iconPeople.png" alt="">
-                        <p class="whyweContainerCardTitle">Полное сопровождение <br> сделки</p>
-                    </article>
-                    <p class="whyweContainerCardDesc">
-                        Сопровождаем от заявки до выхода <br> 
-                        объекта и внесения окончательных <br> 
-                        платежей. Финансирование одного <br> 
-                        проекта — от 5 до 50 млн ₽
-                    </p>
-                </article>
-            </section>
+
+        <section class="benefits">
+            <h2 class="benefits__title">Почему застройщики выбирают нас</h2>
+            
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <div class="benefit-card__header">
+                        <img class="benefit-card__icon" src="/assets/iconSale.png" alt="">
+                        <p class="benefit-card__title">Увеличение продаж</p>
+                    </div>
+                    <p class="benefit-card__desc">Предоставляете клиентам готовое <br> финансирование — закрываете<br> больше сделок</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-card__header">
+                        <img class="benefit-card__icon" src="/assets/iconCa.png" alt="">
+                        <p class="benefit-card__title">Привлечение новой<br> аудитории</p>
+                    </div>
+                    <p class="benefit-card__desc">Покупатели, которые ранее не могли <br> позволить дом из-за сложных <br> банковских требований</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-card__header">
+                        <img class="benefit-card__icon" src="/assets/iconList.png" alt="">
+                        <p class="benefit-card__title">Минимум бюрократии</p>
+                    </div>
+                    <p class="benefit-card__desc">Цифровой документооборот, личный <br> кабинет застройщика, прозрачный <br> андеррайтинг</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-card__header">
+                        <img class="benefit-card__icon" src="/assets/iconUp.png" alt="">
+                        <p class="benefit-card__title">Рост конверсии</p>
+                    </div>
+                    <p class="benefit-card__desc">Меньше отказов из-за сложных <br> банковских требований. Клиенты <br> получают одобрение быстрее, а <br> сделки не «зависают»</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-card__header">
+                        <img class="benefit-card__icon" src="/assets/iconPeople.png" alt="">
+                        <p class="benefit-card__title">Полное сопровождение <br> сделки</p>
+                    </div>
+                    <p class="benefit-card__desc">Сопровождаем от заявки до выхода <br> объекта и внесения окончательных <br> платежей. Финансирование одного <br> проекта — от 5 до 50 млн ₽</p>
+                </div>
+            </div>
         </section>
-        <section class="partnershipContainer">
-            <h2 class="partnershipContainerTitle">
-                Простой путь <br>
-                к партнёрству
-            </h2>
-            <section class="partnershipContainerList">
-                <h3 class="partnershipContainerListText">Финансирование малоэтажного строительства</h3>
-                <section class="partnershipList">
-                    <article class="partnershipListBlock">
-                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
-                        <p class="partnershipListBlockText">Регистрация в личном <br> кабинете застройщика</p>
-                    </article>
-                    <article class="partnershipListBlock">
-                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
-                        <p class="partnershipListBlockText">Подача заявки на <br> аккредитацию объектов</p>
-                    </article>
-                    <article class="partnershipListBlock">
-                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
-                        <p class="partnershipListBlockText">Андеррайтинг — <br> проверка заёмщика (без справок о доходах)</p>
-                    </article>
-                    <article class="partnershipListBlock">
-                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
-                        <p class="partnershipListBlockText">Одобрение и <br> заключение договора</p>
-                    </article>
-                    <article class="partnershipListBlock">
-                        <img class="partnershipListBlockImg" src="/assets/Galochka.svg" alt="">
-                        <p class="partnershipListBlockText">Выплата — деньги <br> поступают подрядчику / <br> застройщику</p>
-                    </article>
-                </section>
-            </section>
+
+        <section class="partnership">
+            <h2 class="partnership__title">Простой путь <br> к партнёрству</h2>
+            
+            <div class="partnership__content">
+                <h3 class="partnership__subtitle">Финансирование малоэтажного строительства</h3>
+                
+                <div class="partnership__list">
+                    <div class="partnership-item">
+                        <img class="partnership-item__icon" src="/assets/Galochka.svg" alt="">
+                        <p class="partnership-item__text">Регистрация в личном <br> кабинете застройщика</p>
+                    </div>
+                    <div class="partnership-item">
+                        <img class="partnership-item__icon" src="/assets/Galochka.svg" alt="">
+                        <p class="partnership-item__text">Подача заявки на <br> аккредитацию объектов</p>
+                    </div>
+                    <div class="partnership-item">
+                        <img class="partnership-item__icon" src="/assets/Galochka.svg" alt="">
+                        <p class="partnership-item__text">Андеррайтинг — <br> проверка заёмщика (без справок о доходах)</p>
+                    </div>
+                    <div class="partnership-item">
+                        <img class="partnership-item__icon" src="/assets/Galochka.svg" alt="">
+                        <p class="partnership-item__text">Одобрение и <br> заключение договора</p>
+                    </div>
+                    <div class="partnership-item">
+                        <img class="partnership-item__icon" src="/assets/Galochka.svg" alt="">
+                        <p class="partnership-item__text">Выплата — деньги <br> поступают подрядчику / <br> застройщику</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="PartnerContainer"> 
-            <article class="PartnerContainerBlock">
-                <h2 class="PartnerContainerTitle">Кто может стать <br> партнёром</h2>
-                <p class="PartnerContainerDesc">
+
+        <section class="requirements">
+            <div class="requirements__block">
+                <h2 class="requirements__title">Кто может стать <br> партнёром</h2>
+                <p class="requirements__list">
                     ▶ Опыт малоэтажного строительства от 2 лет <br>
                     ▶ Завершено не менее 5 частных домов за последний год <br>
                     ▶ Предоставление полной проектной и сметной документации <br>
                     ▶ Оформленные земельные отношения <br>
                     ▶ Отсутствие недоимок по налогам и существенных исков <br>
                     ▶ Финансовая устойчивость <br>
-                    ▶ Отсутствие исков об оспаривании договоров подряда <br>
+                    ▶ Отсутствие исков об оспаривании договоров подряда
                 </p>
-            </article>
+            </div>
         </section>
-        <section class="ControlContainer">
-            <h2 class="ControlContainerTitle">Управляйте <br> финансированием онлайн</h2>
-            <section class="ControlContainerList">
-                    <article class="ControlContainerCard">
-                        <img class="ControlContainerCardImg" src="/assets/iconDisplay.png" alt="">
-                        <p class="ControlContainerCardTitle">Личный кабинет застройщика</p>
-                        <p class="ControlContainerCardDesc">
-                            Подача заявок, отслеживание статусов, <br> 
-                            защищённый обмен документами
-                        </p>
-                    </article>
-                    <article class="ControlContainerCard">
-                        <img class="ControlContainerCardImg" src="/assets/iconCalculat.png" alt="">
-                        <p class="ControlContainerCardTitle">Кредитный калькулятор</p>
-                        <p class="ControlContainerCardDesc">
-                            Клиент может рассчитать условия до подачи <br> заявки
-                        </p>
-                    </article>
-                    <article class="ControlContainerCard">
-                        <img class="ControlContainerCardImg" src="/assets/iconBook.png" alt="">
-                        <p class="ControlContainerCardTitle">Открытый продукт</p>
-                        <p class="ControlContainerCardDesc">
-                            Прозрачные стандарты, которые понятны и <br> клиенту, и партнёру
-                        </p>
-                    </article>
-            </section>
-        </section> 
-        <section class="BuisnesContainer">
-            <img class="BuisnesContainerImg" src="/assets/BgPoster.jpg" alt="">
-            <section class="BuisnesContainerList">
-                <h2 class="BuisnesContainerListTite">Мы не просто даём деньги, <br> мы развиваем ваш бизнес!</h2>
-                <section class="BuisnesContainerCards">
 
-                    <article class="BuisnesContainerCard">
-                        <p class="BuisnesContainerCardNum">1</p>
-                        <p class="BuisnesContainerCardTitle">
-                            Единый чат с  персональным  менеджером
-                        </p>
-                        <p class="BuisnesContainerCardDesc">
-                            Быстрое решение текущих <br> 
-                            вопросов для ваших <br> 
-                            менеджеров по продажам. <br> 
-                            Помощь на всех этапах сделки
-                        </p>
-                    </article>
-                    <article class="BuisnesContainerCard">
-                        <p class="BuisnesContainerCardNum">2</p>
-                        <p class="BuisnesContainerCardTitle">Стандарты продаж</p>
-                        <p class="BuisnesContainerCardDesc">
-                            Готовые скрипты, чек-листы и <br> 
-                            инструменты для ваших <br> 
-                            менеджеров. Выход на <br> 
-                            качественно новый уровень <br> работы
-                        </p>
-                    </article>
-                    <article class="BuisnesContainerCard">
-                        <p class="BuisnesContainerCardNum">3</p>
-                        <p class="BuisnesContainerCardTitle">Куратор</p>
-                        <p class="BuisnesContainerCardDesc">
-                            Персональный менеджер <br> 
-                            помогает внедрить стандарты <br> 
-                            кредитования и сопровождает <br> партнёра
-                        </p>
-                    </article>
-                    <article class="BuisnesContainerCard">
-                        <p class="BuisnesContainerCardNum">4</p>
-                        <p class="BuisnesContainerCardTitle">Совместные акции</p>
-                        <p class="BuisnesContainerCardDesc">
-                            Участие в промо-кампаниях, <br> 
-                            продвижение ваших объектов <br> среди клиентов кооператива.
-                        </p>
-                    </article>
-                </section>
-            </section>
+        <section class="tools">
+            <h2 class="tools__title">Управляйте <br> финансированием онлайн</h2>
+            
+            <div class="tools__grid">
+                <div class="tool-card">
+                    <img class="tool-card__icon" src="/assets/iconDisplay.png" alt="">
+                    <p class="tool-card__title">Личный кабинет застройщика</p>
+                    <p class="tool-card__desc">Подача заявок, отслеживание статусов, <br> защищённый обмен документами</p>
+                </div>
+                
+                <div class="tool-card">
+                    <img class="tool-card__icon" src="/assets/iconCalculat.png" alt="">
+                    <p class="tool-card__title">Кредитный калькулятор</p>
+                    <p class="tool-card__desc">Клиент может рассчитать условия до подачи <br> заявки</p>
+                </div>
+                
+                <div class="tool-card">
+                    <img class="tool-card__icon" src="/assets/iconBook.png" alt="">
+                    <p class="tool-card__title">Открытый продукт</p>
+                    <p class="tool-card__desc">Прозрачные стандарты, которые понятны и <br> клиенту, и партнёру</p>
+                </div>
+            </div>
         </section>
-        <section class="conditionsContainer">
-            <h2 class="conditionsContainerTitle">Условия для <br> конечных <br> заёмщиков</h2>
-            <p class="conditionsContainerDesc">
+
+        <section class="business">
+            <img class="business__bg" src="/assets/BgPoster.jpg" alt="">
+            
+            <div class="business__content">
+                <h2 class="business__title">Мы не просто даём деньги, <br> мы развиваем ваш бизнес!</h2>
+                
+                <div class="business__grid">
+                    <div class="business-card">
+                        <div class="business-card__number">1</div>
+                        <p class="business-card__title">Единый чат с персональным менеджером</p>
+                        <p class="business-card__desc">Быстрое решение текущих <br> вопросов для ваших <br> менеджеров по продажам. <br> Помощь на всех этапах сделки</p>
+                    </div>
+                    
+                    <div class="business-card">
+                        <div class="business-card__number">2</div>
+                        <p class="business-card__title">Стандарты продаж</p>
+                        <p class="business-card__desc">Готовые скрипты, чек-листы и <br> инструменты для ваших <br> менеджеров. Выход на <br> качественно новый уровень работы</p>
+                    </div>
+                    
+                    <div class="business-card">
+                        <div class="business-card__number">3</div>
+                        <p class="business-card__title">Куратор</p>
+                        <p class="business-card__desc">Персональный менеджер <br> помогает внедрить стандарты <br> кредитования и сопровождает <br> партнёра</p>
+                    </div>
+                    
+                    <div class="business-card">
+                        <div class="business-card__number">4</div>
+                        <p class="business-card__title">Совместные акции</p>
+                        <p class="business-card__desc">Участие в промо-кампаниях, <br> продвижение ваших объектов <br> среди клиентов кооператива.</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="terms">
+            <h2 class="terms__title">Условия для <br> конечных <br> заёмщиков</h2>
+            <p class="terms__list">
                 ▶ Сумма финансирования — от 5 до 50 млн ₽<br>
                 ▶ Ставка — от минимальной (зависит от суммы, срока, первоначального взноса)<br>
-                ▶ Первоначальный взнос — от 30%, по ряду программ  возможно 0% <br>
+                ▶ Первоначальный взнос — от 30%, по ряду программ возможно 0% <br>
                 ▶ Срок — до 15 лет<br>
                 ▶ Обеспечение — строящееся или имеющееся жильё (залог)<br>
-                ▶ Погашение — аннуитетные платежи, возможность  досрочного погашения без штрафов<br>
+                ▶ Погашение — аннуитетные платежи, возможность досрочного погашения без штрафов
             </p>
         </section>
-        <section class="questionsContainer">
-            <h2 class="questionsContainerTitle">Часто задаваемые вопросы (FAQ)</h2>
-                <section class="questionsContainerBlock" id="question1">
-                    <article class="questionsContainerRow">
-                        <h2 class="questionsContainerRowTitle">1. Какие цели финансирования вы не одобряете?</h2>
-                        <button class="cross"></button>
-                    </article>
-                    <p class="questionsContainerRowDesc">
-                        Мы финансируем только строительство самого жилого дома по утверждённой <br>
-                        смете. В финансирование не входят:<br>
-                        Наружные сети, газификация, подключение к магистралям и сетям <br>
-                        Проектирование, разрешительная документация, юридические услуги <br>
-                        Мебель, предметы интерьера, ландшафтные работы и материалы <br>
-                        Сторонние строения, не входящие в объект договора <br>
-                        Оформление земельного участка <br>
-                        Все эти расходы клиент берёт на себя отдельно <br>
+
+        <section class="faq">
+            <h2 class="faq__title">Часто задаваемые вопросы (FAQ)</h2>
+            
+            <div class="faq__item" id="faq1">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">1. Какие цели финансирования вы не одобряете?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>Мы финансируем только строительство самого жилого дома по утверждённой <br>
+                    смете. В финансирование не входят:<br>
+                    Наружные сети, газификация, подключение к магистралям и сетям <br>
+                    Проектирование, разрешительная документация, юридические услуги <br>
+                    Мебель, предметы интерьера, ландшафтные работы и материалы <br>
+                    Сторонние строения, не входящие в объект договора <br>
+                    Оформление земельного участка <br>
+                    Все эти расходы клиент берёт на себя отдельно</p>
+                </div>
+            </div>
+            
+            <div class="faq__item" id="faq2">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">2. Какие документы нужны для подачи заявки на <br> финансирование объекта?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>
+                     Для рассмотрения заявки необходимо предоставить: <br>
+                     · Данные заёмщика: ФИО, паспортные данные (скан паспорта) <br>
+                     · Данные созаёмщика (супруг/супруга): ФИО, паспортные данные (скан паспорта) <br>
+                     · Данные участка: точный адрес, кадастровый номер (скан выписки из ЕГРН) <br>
+                     · Данные строителя: наименование ООО или ФИО ИП, адрес, реквизиты <br>
+                     · Данные постройки: проект (эскизный или архитектурный) <br>
+                     · Данные стоимости строительства: смета с разделением на стоимость работ и стоимость материалов <br>
+                     · Данные сроков строительства: график работ (каждый этап с указанием количества дней или месяцев) 
                     </p>
-                </section>
-                <section class="questionsContainerBlock" id="question2">
-                    <article class="questionsContainerRow">
-                        <h2 class="questionsContainerRowTitle">2. Какие документы нужны для подачи заявки на <br> финансирование объекта?</h2>
-                        <button class="cross" ></button>
-                    </article>
-                    <p class="questionsContainerRowDesc">
-                        Для рассмотрения заявки необходимо предоставить: <br>
-                        Данные заёмщика: ФИО, паспортные данные (скан паспорта) <br>
-                        Данные созаёмщика (супруг/супруга): ФИО, паспортные данные (скан паспорта) <br>
-                        Данные участка: точный адрес, кадастровый номер (скан выписки из ЕГРН) <br>
-                        Данные строителя: наименование ООО или ФИО ИП, адрес, реквизиты <br>
-                        Данные постройки: проект (эскизный или архитектурный) <br>
-                        Данные стоимости строительства: смета с разделением на стоимость <br> 
-                        работ и стоимость материалов <br>
-                        Данные сроков строительства: график работ (каждый этап с указанием <br> 
-                        количества дней или месяцев) <br>
-                        Справки о доходах, кредитная история и первоначальный взнос не требуются
-                    </p>
-                </section>
-                <section class="questionsContainerBlock">
-                    <article class="questionsContainerRow">
-                        <h2 class="questionsContainerRowTitle">3. Что является залогом?</h2>
-                        <button class="cross"></button>
-                    </article>
-                    <p class="questionsContainerRowDesc">
-                        Залогом выступают земельный участок (в собственности, под ИЖС) и <br> 
-                        строящийся на нём дом. Дом ещё не построен, но его будущая стоимость уже <br> 
-                        служит обеспечением
-                    </p>
-                </section>
-                <section class="questionsContainerBlock">
-                    <article class="questionsContainerRow">
-                        <h2 class="questionsContainerRowTitle">3. Что является залогом?</h2>
-                        <button class="cross"></button>
-                    </article>
-                    <p class="questionsContainerRowDesc">
-                        Залогом выступают земельный участок (в собственности, под ИЖС) и <br> 
-                        строящийся на нём дом. Дом ещё не построен, но его будущая стоимость уже <br> 
-                        служит обеспечением
-                    </p>
-                </section>
-                <section class="questionsContainerBlock">
-                    <article class="questionsContainerRow">
-                        <h2 class="questionsContainerRowTitle">4. Как быстро строительная компания получает деньги?</h2>
-                        <button class="cross"></button>
-                    </article>
-                    <p class="questionsContainerRowDesc">
-                        Деньги выделяются поэтапно, но очень оперативно — сразу после подписания <br> договора и согласно графику работ. Эксроу-счета не используются
-                    </p>
-                </section>
+                </div>
+            </div>
+            
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">3. Что является залогом?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>Залогом выступают земельный участок (в собственности, под ИЖС) и <br> 
+                    строящийся на нём дом. Дом ещё не построен, но его будущая стоимость уже <br> 
+                    служит обеспечением</p>
+                </div>
+            </div>
+            
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">4. Как быстро строительная компания получает деньги?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>Деньги выделяются поэтапно, но очень оперативно — сразу после подписания <br> договора и согласно графику работ. Эксроу-счета не используются</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">5. Можно ли погасить кредит досрочно?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>Да, в любой момент без штрафов и дополнительных комиссий</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">
+                    <h3 class="faq__question-text">6. Как строительной компании начать рекомендовать наш финансовый продукт клиентам?</h3>
+                    <button class="faq__toggle"></button>
+                </div>
+                <div class="faq__answer">
+                    <p>Аккредитация происходит автоматически при подаче первого объекта на рассмотрение. После этого создаётся общий чат, предоставляются скрипты и обучающие материалы для отдела продаж, а наш специалист консультирует 24/7.</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <section class="fooContainer">
-            <img class="fooImg" src="/assets/Map.jpg" alt="">
-            <h2 class="fooTitle">Начнём <br> сотрудничество?</h2>
-            <p class="fooDesc">
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__map" src="/assets/Map.jpg" alt="">
+            <h2 class="footer__title">Начнём <br> сотрудничество?</h2>
+            <p class="footer__desc">
                 Обсудим детали аккредитации ваших объектов, подключим личный <br> 
                 кабинет и запустим продажи с нашим финансированием
             </p>
-            <p class="fooContact" id="Num1">ЦФО +7 993 302 07 26</p>
-            <p class="fooContact" id="Num2">СЗФО +7 812 313 21 38</p>
-            <nav class="fooNav">
-                <h2 class="fooNavTitle">ИПК "РБК"</h2>
-                <a  class="fooNavLink" href="#">Кредитный калькулятор</a>
-                <a  class="fooNavLink" href="#">sales@ipkrbk.ru</a>
-                <a  class="fooNavLink" href="#">ВКонтакте</a>
-                <a  class="fooNavLink" href="#">MAX</a>
-                <a  class="fooNavLink" href="#">Telegram</a>
+            <p class="footer__contact" id="contactCfo">ЦФО +7 993 302 07 26</p>
+            <p class="footer__contact" id="contactSzfo">СЗФО +7 812 313 21 38</p>
+            
+            <nav class="footer__nav">
+                <h2 class="footer__nav-title">ИПК "РБК"</h2>
+                <a class="footer__nav-link" href="#">Кредитный калькулятор</a>
+                <a class="footer__nav-link" href="#">sales@ipkrbk.ru</a>
+                <a class="footer__nav-link" href="#">ВКонтакте</a>
+                <a class="footer__nav-link" href="#">MAX</a>
+                <a class="footer__nav-link" href="#">Telegram</a>
             </nav>
-            <article class="fooText">
-                <p class="fooRights">Все права защищены ©</p>
-                <a class="fooLinkUp" href="#">Вернуться вверх</a>
-            </article>
-        </section>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">Все права защищены ©</p>
+                <a class="footer__back-to-top" href="#">Вернуться вверх</a>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
