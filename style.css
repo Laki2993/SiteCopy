@@ -603,7 +603,7 @@ body {
 .business-card__desc {
     font-size: 0.9vw;
     font-weight: lighter;
-    color: #979797;
+    color: #666666;
 }
 
 .terms {
@@ -1065,7 +1065,6 @@ body {
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
     
-    /* модалка */
     .modal {
         height:100%;
         padding: 0vw 2vw 10vw 0vw;
@@ -1097,7 +1096,6 @@ body {
         font-size: 1.2vw;
     }
     
-    /* hero */
     .hero {
         height: 60vw;
         grid-template-rows: 18vw 35vw 0vw;
@@ -1117,9 +1115,8 @@ body {
         padding: 1vw;
     }
     
-    /* форма обратной связи */
     .callback-form {
-        padding: 2.5vw;
+      padding: 2.5vw;
         gap: 3vw;
         width: 70vw;
     }
@@ -1171,7 +1168,6 @@ body {
         font-size: 1.3vw;
     }
     
-    /* features */
     .features {
         height: auto;
         min-height: 60vw;
@@ -1211,7 +1207,6 @@ body {
         font-size: 1.3vw;
     }
     
-    /* stats */
     .stats {
         height: auto;
         min-height: 55vw;
@@ -1244,7 +1239,6 @@ body {
         font-size: 1.8vw;
     }
     
-    /* benefits */
     .benefits {
         height: auto;
         min-height: 80vw;
@@ -1282,7 +1276,6 @@ body {
         font-size: 1.3vw;
     }
     
-    /* partnership */
     .partnership {
         grid-template-columns: 1fr;
         gap: 5vw;
@@ -1324,7 +1317,6 @@ body {
         font-size: 1.5vw;
     }
     
-    /* requirements */
     .requirements {
         height: auto;
         min-height: 60vw;
@@ -1348,7 +1340,6 @@ body {
         padding: 2vw;
     }
     
-    /* tools */
     .tools {
         height: auto;
         min-height: 55vw;
@@ -1378,7 +1369,6 @@ body {
         font-size: 1.3vw;
     }
     
-    /* business */
     .business {
         height: auto;
         flex-direction: column;
@@ -1420,7 +1410,6 @@ body {
         font-size: 1.3vw;
     }
     
-    /* terms */
     .terms {
         height: auto;
         min-height: 60vw;
@@ -1437,7 +1426,6 @@ body {
         line-height: 4vw;
     }
     
-    /* faq */
     .faq {
         padding: 10vw 5vw;
         gap: 2vw;
@@ -1471,7 +1459,6 @@ body {
         padding: 1.5vw;
     }
     
-    /* footer */
     .footer {
         padding: 8vw 0vw 4vw 0vw;
     }
@@ -1524,7 +1511,6 @@ body {
         font-size: 1.5vw;
     }
     
-    /* кнопка вызова */
     .callback-trigger {
         width: 4vw;
         height: 4vw;
@@ -1534,7 +1520,6 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     
-    /* модалка */
     .modal {
         height: 100%;
         padding: 0vw 3vw 10vw 0vw;
@@ -1567,7 +1552,6 @@ body {
         line-height: 2vw;
     }
     
-    /* hero */
     .hero {
         height: 70vw;
         grid-template-rows: 20vw 40vw 0vw;
@@ -1587,7 +1571,6 @@ body {
         padding: 1.2vw;
     }
     
-    /* форма обратной связи */
     .callback-form {
         padding: 3vw;
         gap: 3vw;
@@ -1635,7 +1618,6 @@ body {
         font-size: 1.5vw;
     }
     
-    /* features */
     .features {
         height: auto;
         min-height: 70vw;
@@ -1674,7 +1656,6 @@ body {
         font-size: 1.5vw;
     }
     
-    /* stats */
     .stats {
         height: auto;
         min-height: 65vw;
@@ -1707,7 +1688,6 @@ body {
         font-size: 2vw;
     }
     
-    /* benefits */
     .benefits {
         height: auto;
         min-height: 100vw;
@@ -1745,7 +1725,6 @@ body {
         font-size: 1.8vw;
     }
     
-    /* partnership */
     .partnership {
         grid-template-columns: 1fr;
         gap: 6vw;
@@ -1787,7 +1766,6 @@ body {
         font-size: 2vw;
     }
     
-    /* requirements */
     .requirements {
         height: auto;
         min-height: 70vw;
@@ -1811,7 +1789,6 @@ body {
         padding: 3vw;
     }
     
-    /* tools */
     .tools {
         height: auto;
         min-height: 65vw;
@@ -1841,7 +1818,6 @@ body {
         font-size: 1.8vw;
     }
     
-    /* business */
     .business {
         height: auto;
         flex-direction: column;
@@ -1890,7 +1866,6 @@ body {
         font-size: 1.8vw;
     }
     
-    /* terms */
     .terms {
         height: auto;
         min-height: 70vw;
@@ -1907,7 +1882,6 @@ body {
         line-height: 5vw;
     }
     
-    /* faq */
     .faq {
         padding: 12vw 6vw;
         gap: 3vw;
@@ -1941,7 +1915,6 @@ body {
         padding: 2vw;
     }
     
-    /* footer */
     .footer {
         padding: 10vw 0vw 5vw 0vw;
     }
@@ -1994,7 +1967,6 @@ body {
         font-size: 2vw;
     }
     
-    /* кнопка вызова */
     .callback-trigger {
         width: 5vw;
         height: 5vw;
@@ -2002,44 +1974,41 @@ body {
         right: 4vw;
     }
 }
-/* АДАПТИВ 320px - 767px (телефоны) */
 @media  (max-width: 767px) {
     
-    /* модалка */
     .modal {
         height: 100%;
         padding: 0vw 4vw 16vw 0vw;
     }
     
     .modal__form {
-        width: 60vw;
-        height: 55vw;
+        width: 70vw;
+        height: 75vw;
         gap: 3vw;
     }
     
     .modal__title {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     
     .modal__input {
-        width: 45vw;
-        height: 8vw;
-        font-size: 2.5vw;
+        width: 55vw;
+        height: 12vw;
+        font-size: 4vw;
         padding-left: 2vw;
     }
     
     .modal__submit {
-        width: 45vw;
-        height: 8vw;
-        font-size: 2.5vw;
+        width: 55vw;
+        height: 12vw;
+        font-size: 3vw;
     }
     
     .modal__description {
-        font-size: 2.5vw;
+        font-size: 3vw;
         line-height: 3.5vw;
     }
     
-    /* hero */
     .hero {
         height: 120vw;
         grid-template-rows: auto;
@@ -2062,7 +2031,6 @@ body {
         padding: 2vw;
     }
     
-    /* форма обратной связи */
     .callback-form {
         padding: 5vw;
         gap: 6.5vw;
@@ -2090,6 +2058,7 @@ body {
         width: 30vw;
         height: 6vw;
         font-size: 2.5vw;
+        font-weight: normal;
         border-radius: 0.7vw;
     }
     
@@ -2113,7 +2082,6 @@ body {
         font-size: 2vw;
     }
     
-    /* features */
     .features {
         height: auto;
         min-height: 180vw;
@@ -2153,7 +2121,6 @@ body {
         font-size: 3vw;
     }
     
-    /* stats */
     .stats {
         height: auto;
         min-height: 140vw;
@@ -2188,7 +2155,6 @@ body {
         font-size: 3vw;
     }
     
-    /* benefits */
     .benefits {
         height: auto;
         min-height: 180vw;
@@ -2227,7 +2193,6 @@ body {
         font-size: 3vw;
     }
     
-    /* partnership */
     .partnership {
         grid-template-columns: 1fr;
         gap: 8vw;
@@ -2269,7 +2234,6 @@ body {
         font-size: 3.5vw;
     }
     
-    /* requirements */
     .requirements {
         height: auto;
         min-height: 120vw;
@@ -2293,7 +2257,6 @@ body {
         padding: 4vw;
     }
     
-    /* tools */
     .tools {
         height: auto;
         min-height: 120vw;
@@ -2323,7 +2286,6 @@ body {
         font-size: 3vw;
     }
     
-    /* business */
     .business {
         height: auto;
         flex-direction: column;
@@ -2372,7 +2334,6 @@ body {
         font-size: 3vw;
     }
     
-    /* terms */
     .terms {
         height: auto;
         min-height: 120vw;
@@ -2389,7 +2350,6 @@ body {
         line-height: 6vw;
     }
     
-    /* faq */
     .faq {
         padding: 15vw 5vw;
         gap: 4vw;
@@ -2409,7 +2369,8 @@ body {
     }
     
     .faq__question-text {
-        font-size: 3.5vw;
+        width:85vw ;
+        font-size: 3vw;
     }
     
     .faq__toggle {
@@ -2423,7 +2384,6 @@ body {
         padding: 3vw;
     }
     
-    /* footer */
     .footer {
         padding: 15vw 0vw 8vw 0vw;
     }
@@ -2451,6 +2411,10 @@ body {
         padding: 3vw;
         font-size: 3.5vw;
     }
+    .footer__contact:hover {
+        background-color: #ffffff;
+        color: #1a1f3e;
+    }
     
     .footer__nav {
         flex-wrap: wrap;
@@ -2476,7 +2440,6 @@ body {
         font-size: 3vw;
     }
     
-    /* кнопка вызова */
     .callback-trigger {
         width: 10vw;
         height: 10vw;
